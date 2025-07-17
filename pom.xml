@@ -11,7 +11,8 @@
 	<groupId>com.uynguyen</groupId>
 	<artifactId>eds</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>eds</name>
+    <packaging>pom</packaging>
+    <name>eds</name>
 	<description>Welcome to the E-commerce Data Simulator! This project is a powerful, configurable tool designed to generate realistic user interaction data for an e-commerce website.</description>
 	<url/>
 	<licenses>
@@ -20,7 +21,12 @@
 	<developers>
 		<developer/>
 	</developers>
-	<scm>
+    <modules>
+        <module>data-generator</module>
+		<module>data-persister</module>
+		<module>config-manager</module>
+	</modules>
+    <scm>
 		<connection/>
 		<developerConnection/>
 		<tag/>
